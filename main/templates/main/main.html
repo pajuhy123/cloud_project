@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MentoHere</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "main/vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static "main/vendor/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "main/css/landing-page.css" %}" rel="stylesheet">
+    <!-- for slide-->
+    <link rel="stylesheet" type="text/css" href="{%static "main/css/demo.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{%static "main/css/style.css" %}" />
+    <script type="text/javascript" src="../static/main/js/modernizr.custom.04022.js"></script>
+  
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="{%url 'main:main' %}">MentoHere</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><br><br><br><br>  
+  
+    <!-- Image Carousel -->
+    <div class="sp-slideshow">
+			
+				<input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+				<label for="button-1" class="button-label-1"></label>
+				
+				<input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+				<label for="button-2" class="button-label-2"></label>
+				
+				<input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+				<label for="button-3" class="button-label-3"></label>
+				
+				<input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+				<label for="button-4" class="button-label-4"></label>
+				
+				<input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+				<label for="button-5" class="button-label-5"></label>
+				
+				<label for="button-1" class="sp-arrow sp-a1"></label>
+				<label for="button-2" class="sp-arrow sp-a2"></label>
+				<label for="button-3" class="sp-arrow sp-a3"></label>
+				<label for="button-4" class="sp-arrow sp-a4"></label>
+				<label for="button-5" class="sp-arrow sp-a5"></label>
+				
+				<div class="sp-content">
+					<div class="sp-parallax-bg"></div>
+					<ul class="sp-slider clearfix">
+						<li><img src="{% static "main/images/image1.png" %}"alt="image01" /></li>
+						<li><img src="{% static "main/images/image2.png" %}"alt="image02" /></li>
+						<li><img src="{% static "main/images/image3.png" %}" alt="image03" /></li>
+						<li><img src="{% static "main/images/image4.png" %}" alt="image04" /></li>
+						<li><img src="{% static "main/images/image5.png" %}"alt="image05" /></li>
+					</ul>
+				</div><!-- sp-content -->
+				
+			</div><!-- sp-slideshow -->
+
+    <!-- Page Content -->
+    <section class="content-section-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">아이들의 꿈과 진로탐색를 위한 <br>HentoHere</h2>
+            <p class="lead">
+                    MentoHere는 학생들이 언제나 멘토들에게 다가갈 수 있게 한다는 의미로 
+                    전국의 초·중·고교를 대상으로 진로 및 진학 멘토링을 하는 회사입니다.
+            </p>
+            <div class="col-md-4 ">
+            <a href="{%url 'index:index' %}" class="btn btn-primary pull-right">멘토 만나러 가기</a>
+            </div>
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <img class="img-fluid" src="{% static "main/img/ipad.png" %}" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section class="content-section-b">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-5 mr-auto order-lg-2">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">누구나 선생님이 될 수 있습니다.<br>MentoHere</h2>
+            <p class="lead"> 아이들에게 필요한 것은 국어, 수학, 영어만이 아닙니다. 당신의 재능, 직업, 인생으로
+                            아이들에게 훌륭한 선생님이자 멘토가 될 수 있습니다. 
+            </p>
+            <div class="col-md-4 ">
+                    <a href="{%url 'index:index' %}" class="btn btn-primary pull-right">멘토 신청하러가기</a>
+                    </div>
+          </div>
+          <div class="col-lg-5 ml-auto order-lg-1">
+            <img class="img-fluid" src="{% static "main/img/dog.png" %}" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-b -->
+
+    <section class="content-section-a">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">수요조사 하기와 모든 중고 등학교 디비화 그리고 학부모와 학생이 직접 강사를 선택할 수 있는  오픈 마켓</h2><br>Font Awesome Icons</h2>
+            <p class="lead">This template features the 'Lato' font, part of the
+              <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as
+              <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+          </div>
+          <div class="col-lg-5 mr-auto ">
+            <img class="img-fluid" src="{% static "main/img/phones.png" %}" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-a -->
+      <!-- /.container -->
+
+    </aside>
+    <!-- /.banner -->
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+            <div class="container">
+              <p class="m-0 text-center text-white">Copyright &copy; MemtoHere 2017</p>
+            </div>
+            <!-- /.container -->
+          </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../static/main/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/main/vendor/popper/popper.min.js"></script>
+    <script src="../static/main/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
+
+
